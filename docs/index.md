@@ -2,7 +2,6 @@
 
 > **Thèmes**: Science de données, Génie logiciel  
 > **Superviseur**: Louis-Edouard LAFONTANT  
-> **Collaborateurs:** Lallia Diakité & Marc Olivier Jean Paul
 
 ## Informations importantes
 
