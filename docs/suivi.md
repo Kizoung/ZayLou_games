@@ -2,14 +2,22 @@
 
 ## Semaine 1
 
-??? note "Mettre en place l'environnement"
-    - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - [ ] Vestibulum convallis sit amet nisi a tincidunt
-        * [x] In hac habitasse platea dictumst
-        * [x] In scelerisque nibh non dolor mollis congue sed et metus
-        * [ ] Praesent sed risus massa
-    - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+??? note "Étude des Outils Envisagés"
+   Cette première semaine a été consacrée à l'exploration des outils technologiques nécessaires pour notre projet de création d'une plateforme de jeux utilisant la technologie NFC.
+Nous avons installé et configuré notre environnement de développement, notamment :
 
+    -JavaScript (langage principal)
+    -React et React Native (pour le développement de l’interface web et mobile)
+    -GitHub (pour la gestion de version)
+    -VS Code (environnement de développement)
+    -MkDocs (pour la documentation du projet)
+
+Discussions et avancement
+
+    Discussion d’équipe sur les idées de prototypes à mettre en œuvre.
+    Réflexion autour de l’expérience utilisateur : comment intégrer les cartes NFC pour modifier dynamiquement le gameplay.
+    Quelques pistes ont été envisagées pour le prototype initial (ex. : carte qui déclenche une météo aléatoire dans le jeu ou rend un niveau plus difficile).
+    
 !!! info "Notes"
     - Il est possible que nous révisions les exigences après le prototypage
 
