@@ -2,7 +2,7 @@
 
 ## Semaine 1
 
-??? note "Mettre en place l'environnement"
+??? note "Étude des outils envisagés"
     - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
     - [ ] Vestibulum convallis sit amet nisi a tincidunt
         * [x] In hac habitasse platea dictumst
