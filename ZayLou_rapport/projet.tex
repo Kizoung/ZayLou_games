@@ -1,0 +1,76 @@
+\documentclass{article}             % Classe du document: article
+
+\usepackage[french]{babel}          % Langue du document: français
+\usepackage[utf8]{inputenc}         % Encodage du document: UTF-8
+\usepackage[T1]{fontenc}            % Encodage des polices: T1 
+\usepackage{fancybox}               % Boîtes de texte stylisées
+\usepackage{hyperref}               % Liens hypertexte
+\usepackage{color}                  % Couleurs
+\usepackage{graphicx}               % Images
+
+\title{Projet été 2025: ZayLou Games}             % Titre du document
+\author{                            % Auteurs du document
+    Lallia Diakité: 20256054 \\
+    Marc Olivier Jean Paul: 20241763
+}                 
+\date{\today}                       % Date du document   
+
+\begin{document}                    % Début du document
+
+\maketitle                          % Afficher le titre
+
+\section{Introduction}              % Section 1: Introduction
+\label{sec:intro}                   % Étiquette de la section
+Ce document présente le projet de l'été 2025. Il est réalisé par Lallia Diakité
+et Marc Olivier Jean Paul et est supervisé par Louis-Edouard Lafontant.
+
+Il s'agit de la présentation d'une platforme permettant de créer des jeux-
+vidéos. Nous expliquerons les technologies ainsi que les mécansimes que nous y
+intègrerons.
+
+\section{Objectif}
+\label{sec:objectifs}               % Section 2: Objectifs
+ZayLouLou Games est une plateforme de création de mini jeux-vidéos inter-
+actifs en 2D ou 2.5D. L'originalité de la plateforme se trouve dans le fait qu'elle
+permet aux joueurs de scanner des cartes pour ajouter différents effets dans le
+jeu. Les effets peuvent être des bonus, des malus ou même des effets surprises.
+
+\section{Technologies envisagées}
+\label{sec:technologies}       % Section 3: Technologies
+Cette section présente les différentes technologies que nous envisageons d'uti-
+liser pour le développement de la plateforme ZayLou Games.
+
+\subsection{Puces NFC}
+Comme mentionné plus haut, la plateforme ZayLou Games permet aux
+joueurs de scanner des cartes pour ajouter des effets dans le jeu. Pour cela, nous
+envisageons d'utiliser des puces NFC. NFC (Near Field Communication) est une
+technologie de communication sans fil à courte portée qui permet d'échanger des
+données entre deux appareils compatibles. Les puces NFC sont souvent utilisées
+dans les cartes de paiement sans contact, les cartes d'identité et les étiquettes
+intelligentes.
+
+L'objectif est donc de stocker sur ces puces, grâce à des fichiers JSON, les
+informations sur les effets que le joueur peut ajouter dans le jeu.
+
+\subsection{Front-end}
+React est une bibliothèque JavaScript pour la création d'interfaces utilisa-
+teur. Elle est développée par Facebook et est largement utilisée pour le déve-
+loppement d'applications web. Nous prévoyons donc de l'utiliser pour le déve-
+loppement front-end de la plateforme ZayLou Games.
+
+Vu que la principale fonctionnalité de la plateforme se fera sur le web, nous
+avons choisi React pour sa rapidité et sa flexibilité. De plus, React permet
+de créer des composants réutilisables, ce qui facilitera le développement de la
+plateforme.
+
+\subsection{Back-end}
+Pour le développement back-end de la plateforme ZayLou Games, nous envi-
+sageons d'utiliser Node.js. Il s'agit d'un environnement d'exécution JavaScript
+côté serveur qui permet de créer des applications web rapides et évolutives.
+Node.js est particulièrement adapté pour les applications en temps réel, ce
+qui est idéal pour une plateforme de création de jeux-vidéos. De plus, il est facile
+à intégrer avec des bases de données NoSQL comme MongoDB, ce qui facilitera
+la gestion des données des utilisateurs et des jeux créés sur la plateforme.
+
+
+\end{document}                      % Fin du document
