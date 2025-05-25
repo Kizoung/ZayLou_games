@@ -1,76 +1,143 @@
-\documentclass{article}             % Classe du document: article
+\documentclass{article}                             % Classe du document: article
 
-\usepackage[french]{babel}          % Langue du document: français
-\usepackage[utf8]{inputenc}         % Encodage du document: UTF-8
-\usepackage[T1]{fontenc}            % Encodage des polices: T1 
-\usepackage{fancybox}               % Boîtes de texte stylisées
-\usepackage{hyperref}               % Liens hypertexte
-\usepackage{color}                  % Couleurs
-\usepackage{graphicx}               % Images
+\usepackage[french]{babel}                          % Langue du document: français
+\usepackage[utf8]{inputenc}                         % Encodage du document: UTF-8
+\usepackage[T1]{fontenc}                            % Encodage des polices: T1 
+\usepackage{fancybox}                               % Boîtes de texte stylisées
+\usepackage{hyperref}                               % Liens hypertexte
+\usepackage{color}                                  % Couleurs
+\usepackage{graphicx}                               % Images
+\usepackage{enumitem}                              % List customization
 
-\title{Projet été 2025: ZayLou Games}             % Titre du document
-\author{                            % Auteurs du document
+\title{IFT3150 A-E25: Description de projet \\      % Titre du document
+        Nom du projet: ZayLou Games}                % Titre du document
+
+\author{                                            % Auteurs du document
     Lallia Diakité: 20256054 \\
     Marc Olivier Jean Paul: 20241763
 }                 
-\date{\today}                       % Date du document   
+\date{\today}                                       % Date du document   
 
-\begin{document}                    % Début du document
+\begin{document}                                    % Début du document
 
-\maketitle                          % Afficher le titre
+\maketitle                                          % Afficher le titre
 
-\section{Introduction}              % Section 1: Introduction
-\label{sec:intro}                   % Étiquette de la section
-Ce document présente le projet de l'été 2025. Il est réalisé par Lallia Diakité
-et Marc Olivier Jean Paul et est supervisé par Louis-Edouard Lafontant.
-
-Il s'agit de la présentation d'une platforme permettant de créer des jeux-
-vidéos. Nous expliquerons les technologies ainsi que les mécansimes que nous y
-intègrerons.
-
-\section{Objectif}
-\label{sec:objectifs}               % Section 2: Objectifs
-ZayLouLou Games est une plateforme de création de mini jeux-vidéos inter-
-actifs en 2D ou 2.5D. L'originalité de la plateforme se trouve dans le fait qu'elle
-permet aux joueurs de scanner des cartes pour ajouter différents effets dans le
-jeu. Les effets peuvent être des bonus, des malus ou même des effets surprises.
-
-\section{Technologies envisagées}
-\label{sec:technologies}       % Section 3: Technologies
-Cette section présente les différentes technologies que nous envisageons d'uti-
-liser pour le développement de la plateforme ZayLou Games.
-
-\subsection{Puces NFC}
-Comme mentionné plus haut, la plateforme ZayLou Games permet aux
-joueurs de scanner des cartes pour ajouter des effets dans le jeu. Pour cela, nous
-envisageons d'utiliser des puces NFC. NFC (Near Field Communication) est une
-technologie de communication sans fil à courte portée qui permet d'échanger des
-données entre deux appareils compatibles. Les puces NFC sont souvent utilisées
-dans les cartes de paiement sans contact, les cartes d'identité et les étiquettes
-intelligentes.
-
-L'objectif est donc de stocker sur ces puces, grâce à des fichiers JSON, les
-informations sur les effets que le joueur peut ajouter dans le jeu.
-
-\subsection{Front-end}
-React est une bibliothèque JavaScript pour la création d'interfaces utilisa-
-teur. Elle est développée par Facebook et est largement utilisée pour le déve-
-loppement d'applications web. Nous prévoyons donc de l'utiliser pour le déve-
-loppement front-end de la plateforme ZayLou Games.
-
-Vu que la principale fonctionnalité de la plateforme se fera sur le web, nous
-avons choisi React pour sa rapidité et sa flexibilité. De plus, React permet
-de créer des composants réutilisables, ce qui facilitera le développement de la
-plateforme.
-
-\subsection{Back-end}
-Pour le développement back-end de la plateforme ZayLou Games, nous envi-
-sageons d'utiliser Node.js. Il s'agit d'un environnement d'exécution JavaScript
-côté serveur qui permet de créer des applications web rapides et évolutives.
-Node.js est particulièrement adapté pour les applications en temps réel, ce
-qui est idéal pour une plateforme de création de jeux-vidéos. De plus, il est facile
-à intégrer avec des bases de données NoSQL comme MongoDB, ce qui facilitera
-la gestion des données des utilisateurs et des jeux créés sur la plateforme.
+\noindent{Lien vers le dépôt GitHub: \url{https://github.com/Kizoung/ZayLou_games.git}}
 
 
-\end{document}                      % Fin du document
+\section{Introduction}                              % Section 1: Introduction
+\label{sec:intro}                                   % Étiquette de la section
+Ce document présente le projet \textbf{ZayLou Games} développé dans le cadre du cours IFT3150 à l'été 2025. 
+Ce projet est supervisé par Louis-Édouard Lafontant et réalisé par Lallia Diakité et Marc Olivier Jean Paul. 
+Il vise à concevoir une plateforme innovante de création de jeux vidéo interactifs.
+
+\section{Contexte}                                   % Section 2: Contexte
+\label{sec:contexte}                                % Étiquette de la section
+La création de jeux vidéo est aujourd’hui facilitée par des plateformes telles
+que \textbf{Scratch}, \textbf{Unity Playground}, ou \textbf{Gamefroot}. 
+Celles-ci proposent des interfaces simplifiées, souvent basées sur le "glisser-déposer" 
+(\textit{drag-and-drop}), permettant aux jeunes ou aux novices de concevoir des jeux 
+sans écrire de code. Cependant, ces outils restent parfois limités dans la 
+personnalisation ou la profondeur des mécaniques de jeu qu’ils permettent de développer.
+
+Parallèlement, la technologie \textbf{NFC (Near Field Communication)} gagne en popularité dans le domaine du jeu vidéo. On la retrouve notamment dans les figurines \textit{Amiibo de Nintendo} qui permettent de débloquer du contenu dans certains jeux, ou encore dans des cartes interactives utilisées dans les \textit{escape games} ou les jeux éducatifs. Cette technologie permet d’ajouter une dimension physique et tangible à l’expérience vidéoludique.
+
+\section{Problématiques et motivations}     % Section 3: Problématiques et motivations
+\label{sec:problématiques}                        % Étiquette de la section
+
+Actuellement, il existe de nombreuses plateformes de création de jeux-vidéos,
+Mais elles présentent plusieurs problèmeatiques:
+
+\begin{itemize}
+  \item \textbf{Complexité excessive} pour les jeunes utilisateurs : des outils comme Unity 
+  ou Construct, bien que puissants, peuvent décourager les débutant par leur interface technique.
+  \item \textbf{Peu d’interactivité physique :} Peu de plateformes permettent l'intégration de composants
+    physiques comme les cartes NFC, réservées aux jeux commerciaux complexes.
+  \item \textbf{Accessibilité limitée :} Certaines plateformes ne sont pas compatibles avec les appareils mobiles ou 
+  nécessitent des installations complexes.
+\end{itemize}
+
+Nous cherchons donc à répondre à ces enjeux en proposant une solution :
+\begin{itemize}
+  \item \textbf{Accessible et intuitive}, pour permettre aux jeunes de concevoir leur jeux sans 
+  connaissance préalable;
+  \item \textbf{Originale} grâce aux cartes NFC pour enrichir l'expérience de jeu;
+  \item Favorisant la créativité des jeunes.
+\end{itemize}
+
+
+\section{Proposition et objectifs}
+\label{sec:proposition}                            % Étiquette de la section
+Nous proposons de créer \textbf{ZayLou Games} une plateforme de création de jeux vidéo, pour
+laquelle nous aurons à :
+\begin{itemize}[leftmargin=1.5em]
+  \item Créer une plateforme plateforme web pour la création de jeux 2D accessible aux non-développeurs grâce à une interface drag-and-drop.
+  \item Créer une application mobile pour l'exécution des jeux.
+  \item Intégrer l’utilisation de cartes NFC permettant de déclencher des effets en jeu.
+  \item Simuler un effet de profondeur, sans recourir à la manipulation directe de modèles 3D.
+  \item Nous assurer que le jeu créé peut être sauvegardé et joué sur une application mobile compatible.
+\end{itemize}
+
+\subsection{Cartes et puces NFC}
+\begin{itemize}[leftmargin=1.5em]
+  \item Les utilisateurs peuvent scanner des cartes NFC pour déclencher des effets dans le jeu (bonus, malus, surprises).
+  \item Les cartes contiennent des puces NFC (Near Field Communication).
+  \item Chaque puce stocke un fichier JSON décrivant les effets associés.
+  \item Ces fichiers sont lus par la plateforme pour appliquer les effets en jeu.
+\end{itemize}
+
+\subsection{Langages de programmation}
+Le développement sera divisé entre :
+    \begin{itemize}[leftmargin=1.5em]
+      \item \textbf{Front-end :}
+        \begin{itemize}[leftmargin=1.5em]
+          \item Utilisation de React Native, bibliothèque JavaScript pour créer des interfaces mobiles et web.
+          \item Une seule base de code pour plusieurs plateformes.
+          \item Création d'une interface intuitive et réutilisable grâce aux composants.
+        \end{itemize}
+
+      \item \textbf{Back-end :}
+        \begin{itemize}[leftmargin=1.5em]
+          \item Utilisation de Node.js, environnement d’exécution JavaScript côté serveur.
+          \item Parfait pour les applications en temps réel.
+          \item Intégration facile avec MongoDB (base NoSQL) pour la gestion des données utilisateurs et des jeux.
+        \end{itemize}
+
+      \item \textbf{WebSockets:}
+        \begin{itemize}[leftmargin=1.5em]
+          \item Gérer la communication en temps réel entre le front-end et le back-end.
+          \item Permettre aux utilisateurs de jouer en ligne et d'interagir avec les jeux créés.
+          \item Offrir une expérience fluide et réactive.
+        \end{itemize}
+    \end{itemize}
+
+
+\section{Méthodologie}                              % Section 5: Méthodologie de développement
+\label{sec:methodologie}                                    % Étiquette de la section
+Nous utiliserons la méthodologie Agile pour le développement de la plateforme ZayLou
+Games. Il s'agit d'une approche de développement logiciel qui met l'accent sur
+la collaboration entre les membres de l'équipe, la flexibilité et l'adaptabilité aux
+changements. Elle est particulièrement adaptée pour un projet de la taille de ZayLou Games.
+
+Chaque semaine, nous organiserons avec le superviseur des réunions de suivi pour évaluer 
+l'avancement du projet et pour discuter des problèmes rencontrés. Quant aux tâches à réaliser,
+elles seront divisées aux membres de l'équipe tout en se tenant au courant
+des avancées de chacun de sorte à ce que chacun des membres puisse expliquer à lui seul l'entièreté
+du projet.
+
+Nous utiliserons également des sources d'informations externes telles que des vidéos en ligne,
+des tutoriels et des forums de développeurs pour nous aider à résoudre les problèmes
+rencontrés lors du développement de la plateforme, ou pour en apprendre plus sur les plateformes
+actuelles de création de jeux-vidéos.
+
+\section{Conclusion}                                % Section 6: Conclusion
+\label{sec:conclusion}                             % Étiquette de la section
+Le projet ZayLou Games vise à créer une plateforme de création de jeux-vidéos en 2D ou 2.5D 
+simple à utiliser et accessible à un public jeune et novice. La plateforme devra être intuitive 
+et permettra de scanner des cartes pour ajouter des effets dans le jeu.
+
+Au final, ZayLou sera une le rêve de tout gamer, car il permettra de faire de la
+création de jeux-vidéos un jeu d'enfant. Ainsi, tout le monde, pourra donner vie à son 
+imagination.
+
+\end{document}                                      % Fin du document
