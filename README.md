@@ -13,3 +13,11 @@ Site web: https://kizoung.github.io/plateformes_mini_jeux_NFC/
 
 
 Le fichier Core contiendra les classes du modèle (jeu, joueur ...), le fichier controllers sera pour la gestion du jeu, et des logique, le fichier services contiendra tout par rapport aux effets, aux annimations ,règle et collision, Dans views on aura les composants React Native, Storage sera pour la gestion de sauvegarde et chargement et Data les fichiers JSON (effets, cartes NFC)
+
+# Choix de Types script au lieu de javascript sous conseil
+
+Types script a ete creer pour la POO et surtout on peut compiler .js avec typescript
+
+.tsx = Typescript + JSX
+
+Les fichiers .tsx sont pour des composants React/ React Native qui retournent du JSX (balises HTML-like dans du code)
